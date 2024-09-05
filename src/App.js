@@ -41,7 +41,7 @@ const[error,SetError] = useState(null);
           Learn React
         </a> */}
         <div>
-          <img src={bitLogo} className="bit-logo"></img>
+          <img src={bitLogo} className="bit-logo" alt="bitcoin logo"></img>
           {error && <h1>{error}</h1>}
           {isLoading && <h1>IS LOAING...</h1>}
           <h1>{price}</h1>

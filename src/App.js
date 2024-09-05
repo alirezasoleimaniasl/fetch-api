@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import bitLogo from './bitcoin.png';
 import './App.css';
 import {useState,useEffect} from "react"
 
@@ -8,7 +9,7 @@ function App() {
 const[error,SetError] = useState(null);
 
   useEffect(() => {
-    fetch("https://api.coindesk.com/v1/bpi/currentprice/SD.json")
+    fetch("https://api.coindesk.com/v1/bpi/currentprice/USD.json")
     .then((response) => {
       if(!response.ok) throw "Wrong Address";
       else
@@ -40,6 +41,7 @@ const[error,SetError] = useState(null);
           Learn React
         </a>
         <div>
+          <img src={bitLogo} className="bit-logo"></img>
           {error && <h1>{error}</h1>}
           {isLoading && <h1>IS LOAING...</h1>}
           <h1>{price}</h1>

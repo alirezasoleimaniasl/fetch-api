@@ -20,7 +20,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .bit-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: bit-logo-flip infinite 20s linear;
   }
 }
 
@@ -45,5 +45,14 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes bit-logo-flip {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
   }
 }

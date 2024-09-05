@@ -28,7 +28,7 @@ const[error,SetError] = useState(null);
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -39,7 +39,7 @@ const[error,SetError] = useState(null);
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a> */}
         <div>
           <img src={bitLogo} className="bit-logo"></img>
           {error && <h1>{error}</h1>}
